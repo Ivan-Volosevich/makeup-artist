@@ -1,0 +1,47 @@
+@import "../../variables/variables";
+
+.makeup__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: $mainBG;
+    font-family: 'Garamond';
+    font-weight: bold;
+
+    div {
+        padding: 20px;
+    }
+
+    // &_logo {}
+
+    &_menu {
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: auto;
+            padding: unset;
+
+            li {
+                padding: 0 20px;
+
+                a {
+                    text-decoration: none;
+                    color: $mainLightGround;
+                    font-size: 24px;
+                    transition: 0.5s linear;
+
+                    &:hover {
+                        color: $white;
+                        fill: $white;
+
+                        svg, path, g {
+                            transition: 0.5s linear;
+                            fill: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
