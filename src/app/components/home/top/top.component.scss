@@ -1,0 +1,71 @@
+@import "../../../variables/variables";
+
+.home__top {
+  margin-top: 78px;
+  background: top left / 100% 100% linear-gradient(180deg, $mainBG 0%, $white 60%);
+
+  @media screen and (max-width: $max-extra-lg-desktop-width) {
+    margin-top: 76px;
+  }
+
+  &_container {
+    display: flex;
+    color: $mainText;
+
+    &-image {
+      max-height: 700px;
+      max-width: 50%;
+      text-align: center;
+
+      img {
+        height: 100%;
+        max-width: 100%;
+        -webkit-mask: linear-gradient(to bottom, black, transparent);
+        filter: blur(0)
+      }
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &--title {
+        margin: 50px 0;
+
+        .animated-color {
+          animation: anim-color 3s infinite;
+        }
+      }
+
+      &--description {
+        margin: 0 40px;
+
+        @media screen and (max-width: $max-extra-lg-desktop-width) {
+          margin: 0 0 0 20px;
+        }
+
+        h5 {
+          margin: 20px 0;
+        }
+
+        p {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+@keyframes anim-color {
+  0% {
+    color: $mainText;
+  }
+  50% {
+    color: $mainBG;
+  }
+  100% {
+    color: $mainText;
+  }
+}

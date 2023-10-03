@@ -1,15 +1,19 @@
 @import "../../variables/variables";
 
 .makeup__header {
+    position: fixed;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background: $mainBG;
     font-family: 'Garamond';
     font-weight: bold;
+    width: 100%;
+    z-index: 999;
 
     div {
-        padding: 20px;
+        padding: 20px 0;
     }
 
     // &_logo {}
@@ -38,6 +42,25 @@
                         svg, path, g {
                             transition: 0.5s linear;
                             fill: $white;
+                        }
+                    }
+
+                    @media screen and (max-width: $max-extra-lg-desktop-width) {
+                        font-size: 18px;
+
+                        svg {
+                            max-width: 24px;
+                            max-height: 24px;
+                        }
+
+                        &:active {
+                            color: $white;
+                            fill: $white;
+
+                        svg, path, g {
+                            transition: 0.5s linear;
+                            fill: $white;
+                        }
                         }
                     }
                 }

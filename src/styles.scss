@@ -1,5 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/fonts/stylesheet.css';
+@import './app/variables/variables';
+
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Gotham Pro'; }
-h1,h2,h3,h4,h5,h6 { font-family: 'Garamond'; }
-@import './assets/fonts/stylesheet.css';
+h1,h2,h3,h4,h5,h6 { font-family: 'Garamond'; margin: 0 }
+p, span { margin: 0; }
+
+section {
+  padding: 40px 200px;
+}
+
+h3 {
+  font-size: 48px;
+}
+
+h5 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 22px;
+}
+
+@media screen and (max-width: $max-extra-lg-desktop-width) {
+  section {
+    padding: 40px 100px;
+  }
+  
+  h3 {
+    font-size: 40px;
+  }
+  
+  h5 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+}
