@@ -1,10 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import './assets/fonts/stylesheet.css';
 @import './app/variables/variables';
+@import "@coreui/coreui/scss/coreui";
 
+html { scroll-behavior: smooth; }
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Gotham Pro'; color: $mainText }
-h1,h2,h3,h4,h5,h6 { font-family: 'Garamond'; margin: 0 }
+h1,h2,h3,h4,h5,h6 { font-family: 'Garamond'; margin: 0; font-weight: bold; }
 p, span { margin: 0; }
 
 section {
@@ -35,7 +37,12 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }
+
 
 @media screen and (max-width: $max-extra-lg-desktop-width) {
   section {
@@ -53,5 +60,9 @@ p {
   
   p {
     font-size: 18px;
+  }
+
+  .mdc-tab__text-label {
+    font-size: 17px;
   }
 }

@@ -1,1 +1,57 @@
-<section class="home__examples"></section>
+<section class="home__examples" id="home-examples">
+  <div class="home__examples_container">
+    <div class="home__examples_container-title">
+      <h3>Примеры работ</h3>
+    </div>
+    <div class="home__examples_container-content">
+      <div class="home__examples_container-content--description">
+        <div class="work-stats">
+          <p class="work-stats_text">
+            Профессионализм,
+            <br>за которым следует не менее
+          </p>
+        </div>
+        <div class="work-stats">
+          <p class="work-stats_title">
+            8 лет
+          </p>
+          <p class="work-stats_text">
+            опыта
+          </p>
+        </div>
+        <div class="work-stats">
+          <p class="work-stats_title">
+            300
+          </p>
+          <p class="work-stats_text">
+            довольных клиентов в год
+          </p>
+        </div>
+        <div class="work-stats">
+          <p class="work-stats_title">
+            6 областных и других городов
+          </p>
+          <p class="work-stats_text">
+            расположенных по всей стране
+          </p>
+        </div>
+      </div>
+      <div class="home__examples_container-content--images">
+        <c-carousel>
+          <c-carousel-inner>
+            <c-carousel-item *ngFor="let slide of slides">
+              <img
+                [src]="slide.src"
+                alt="{{slide.title}}"
+                class="d-block w-100"
+                loading="lazy"
+              />
+            </c-carousel-item>
+          </c-carousel-inner>
+          <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+          <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+        </c-carousel>
+      </div>
+    </div>
+  </div>
+</section>

@@ -16,10 +16,23 @@
     }
 
     &-content {
-
       img {
+        padding: 10px 0;
         max-width: 500px;
         max-height: 600px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $max-extra-lg-desktop-width) {
+    &_container {
+      padding: 0 20px;
+  
+      &-content {
+        img {
+          max-width: 400px;
+          max-height: 400px;
+        }
       }
     }
   }

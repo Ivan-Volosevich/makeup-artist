@@ -1,0 +1,52 @@
+@import "../../../variables/variables";
+
+
+.home__examples {
+  background: linear-gradient(180deg, $mainDarkBlue 80%, $mainBlue 90%, $white 100%);
+  color: $mainLightText;
+
+  &_container {
+    padding: 0 40px;
+
+    &-title {
+      color: $mainLightGround;
+      text-align: center;
+    }
+
+    &-content {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-bottom: 60px;
+
+      &--description {
+        width: 40%;
+
+        .work-stats {
+          padding: 20px 0;
+
+          &_title {
+            color: $mainLightGround;
+            font-weight: bold;
+            padding: 10px 0;
+          }
+        }
+      }
+
+      &--images {
+        width: 35%;
+        height: 100%;
+
+        img {
+          max-height: 600px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $max-extra-lg-desktop-width) {
+    &_container {
+      padding: 0 20px;
+    }
+  }
+}

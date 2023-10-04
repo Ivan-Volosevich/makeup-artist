@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MatTabsModule } from '@angular/material/tabs';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +11,9 @@ import { ServicesComponent } from './components/home/services/services.component
 import { ExamplesComponent } from './components/home/examples/examples.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTabsModule } from '@angular/material/tabs';
+import { CarouselModule } from '@coreui/angular';
+import { IconModule, IconSetService } from '@coreui/icons-angular';
 
 @NgModule({
   declarations: [
@@ -29,8 +31,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     ServicesComponent,
     MatTabsModule,
+    CarouselModule,
+    IconModule,
   ],
-  providers: [],
+  providers: [IconSetService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

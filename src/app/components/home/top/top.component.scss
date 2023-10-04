@@ -34,7 +34,7 @@
       &--title {
 
         .animated-color {
-          background: linear-gradient(to right, #E91E63 20%, #FFC107 45%, #FFC107 60%, #E91E63 80%);
+          background: linear-gradient(to right, $mainText 20%, #E91E63 45%, #E91E63 60%, $mainText 80%);
           background-size: 200% auto;
           animation: anim-color 3s infinite;
           background-clip: text;
