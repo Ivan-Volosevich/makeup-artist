@@ -1,0 +1,43 @@
+@import "../node_modules/@angular/material/theming";
+@include mat-core();
+
+$custom-makeup-palette: (
+  50: #d0f2ff,
+  100: #addaea,
+  200: #8bbdd1,
+  300: #66a1b7,
+  400: #498ba3,
+  500: #267791,
+  600: #176980,
+  700: #01556a,
+  800: #004255,
+  900: #002d3e,
+  contrast: (
+    50: rgba(#d0f2ff, 0.2),
+    100: rgba(#addaea, 0.3),
+    200: rgba(#8bbdd1, 0.4),
+    300: rgba(#66a1b7, 0.5),
+    400: rgba(#498ba3, 0.6),
+    500: rgba(#267791, 0.7),
+    600: rgba(#176980, 0.75),
+    700: rgba(#01556a, 0.8),
+    800: rgba(#004255, 0.85),
+    900: rgba(#002d3e, 0.9),
+  )
+);
+
+$makeup-primary: mat-palette($custom-makeup-palette, 700);
+$makeup-accent: mat-palette($mat-pink, 500);
+$makeup-warn: mat-palette($mat-red, 800);
+
+$makeup-theme: mat-light-theme((
+  color: (
+    primary: $makeup-primary,
+    accent: $makeup-accent,
+    warn: $makeup-warn,
+  ),
+  typography: mat-typography-config(),
+  density: 0,
+));
+
+@include angular-material-theme($makeup-theme);

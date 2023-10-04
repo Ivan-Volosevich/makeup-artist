@@ -2,7 +2,7 @@
 
 .home__top {
   margin-top: 78px;
-  background: top left / 100% 100% linear-gradient(180deg, $mainBG 0%, $white 60%);
+  background: linear-gradient(180deg, $mainBG 0%, $white 30%);
 
   @media screen and (max-width: $max-extra-lg-desktop-width) {
     margin-top: 76px;
@@ -32,10 +32,15 @@
       justify-content: center;
 
       &--title {
-        margin: 50px 0;
 
         .animated-color {
+          background: linear-gradient(to right, #E91E63 20%, #FFC107 45%, #FFC107 60%, #E91E63 80%);
+          background-size: 200% auto;
           animation: anim-color 3s infinite;
+          background-clip: text;
+          text-fill-color: transparent;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
       }
 
@@ -59,13 +64,7 @@
 }
 
 @keyframes anim-color {
-  0% {
-    color: $mainText;
-  }
-  50% {
-    color: $mainBG;
-  }
-  100% {
-    color: $mainText;
+  to {
+    background-position: 200% center;
   }
 }

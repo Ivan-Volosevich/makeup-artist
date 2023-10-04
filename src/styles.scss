@@ -3,7 +3,7 @@
 @import './app/variables/variables';
 
 html, body { height: 100%; }
-body { margin: 0; font-family: 'Gotham Pro'; }
+body { margin: 0; font-family: 'Gotham Pro'; color: $mainText }
 h1,h2,h3,h4,h5,h6 { font-family: 'Garamond'; margin: 0 }
 p, span { margin: 0; }
 
@@ -13,6 +13,7 @@ section {
 
 h3 {
   font-size: 48px;
+  padding: 50px 0;
 }
 
 h5 {
@@ -23,6 +24,19 @@ p {
   font-size: 22px;
 }
 
+.mdc-tab__text-label {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Garamond';
+}
+
+.mat-mdc-tab-body-content {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 @media screen and (max-width: $max-extra-lg-desktop-width) {
   section {
     padding: 40px 100px;
@@ -30,6 +44,7 @@ p {
   
   h3 {
     font-size: 40px;
+    padding: 40px 0;
   }
   
   h5 {

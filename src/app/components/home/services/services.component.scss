@@ -1,0 +1,26 @@
+@import "../../../variables/variables";
+
+.home__services {
+  background: linear-gradient(180deg, $white 0%, $mainBlue 60%, $mainDarkBlue 100%);
+
+  &_container {
+    padding: 0 40px;
+
+    &-title {
+      text-align: center;
+
+      p {
+        font-style: italic;
+        padding: 20px 0;
+      }
+    }
+
+    &-content {
+
+      img {
+        max-width: 500px;
+        max-height: 600px;
+      }
+    }
+  }
+}
