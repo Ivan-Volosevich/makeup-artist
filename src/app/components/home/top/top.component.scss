@@ -34,7 +34,7 @@
       &--title {
 
         .animated-color {
-          background: linear-gradient(to right, $mainText 20%, #E91E63 45%, #E91E63 60%, $mainText 80%);
+          background: linear-gradient(to right, $mainText 20%, $mainPink 45%, $mainPink 60%, $mainText 80%);
           background-size: 200% auto;
           animation: anim-color 3s infinite;
           background-clip: text;
@@ -46,6 +46,10 @@
 
       &--description {
         margin: 0 40px;
+
+        h5 {
+          text-align: center;
+        }
 
         @media screen and (max-width: $max-extra-lg-desktop-width) {
           margin: 0 0 0 20px;

@@ -1,7 +1,8 @@
 @import "../../../variables/variables";
 
 .home__services {
-  background: linear-gradient(180deg, $white 0%, $mainBlue 60%, $mainDarkBlue 100%);
+  // background: linear-gradient(180deg, $white 0%, $mainBlue 60%, $mainText 100%);
+  background: linear-gradient(to bottom, rgb(255, 255, 255, 0.5), rgba(1, 85, 106, 1)), right / contain no-repeat url("../../../../assets/images/webp/work-02.webp");
 
   &_container {
     padding: 0 40px;
@@ -16,10 +17,21 @@
     }
 
     &-content {
-      img {
-        padding: 10px 0;
-        max-width: 500px;
-        max-height: 600px;
+
+      &--images {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        img {
+          padding: 10px 0;
+          max-width: 500px;
+          max-height: 600px;
+        }
+      }
+
+      &--link {
+        padding: 60px 0;
       }
     }
   }
@@ -29,9 +41,11 @@
       padding: 0 20px;
   
       &-content {
-        img {
-          max-width: 400px;
-          max-height: 400px;
+        &--images {
+          img {
+            max-width: 400px;
+            max-height: 400px;
+          }
         }
       }
     }

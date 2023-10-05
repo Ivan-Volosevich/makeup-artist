@@ -1,0 +1,88 @@
+@import "../../variables/variables";
+
+.home__contacts {
+  background: linear-gradient(to bottom, rgba(133,200,222, 1), rgba(1,149,174, 0.5)), center / cover no-repeat url("../../../assets/images/webp/work-06.webp");
+  
+  &_container {
+    color: $mainText;
+    text-shadow: $white 0 0 11px;
+    // mainText
+    // mainLightGround
+
+    &-title {
+      text-align: center;
+    }
+
+    &-description {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      &--info {
+        text-align: center;
+
+        &-phones {
+          a {
+            transition: 0.5s linear;
+            color: $mainLightText;
+
+            &:hover, &:active {
+              color: $mainPink;
+              fill: $mainPink;
+
+              svg, path, g {
+                  fill: $mainPink;
+                  transition: 0.5s linear;
+              }
+            }
+
+            div {
+              padding: 40px 10px;
+              display: flex;
+              align-items: center;
+
+              span {
+                font-size: 32px;
+                font-weight: 500;
+                text-shadow: $mainText 0 0 11px;
+                padding: 10px;
+              }
+            }
+          }
+        }
+      }
+
+      &--links {
+        text-align: center;
+
+        &-block {
+          padding: 40px 0;
+
+          a {
+            transition: 0.5s linear;
+            color: $mainText;
+
+            &:hover, &:active {
+              color: $mainPink;
+              fill: $mainPink;
+
+              svg, path, g {
+                  fill: $mainPink;
+                  transition: 0.5s linear;
+              }
+            }
+
+            div {
+              padding: 40px 10px;
+              
+              p {
+                padding: 0 0 20px 0;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

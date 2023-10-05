@@ -15,7 +15,7 @@ export class ExamplesComponent implements OnInit {
       src: '../../../../assets/images/webp/work-01.webp',
     };
     this.slides[1] = {
-      src: '../../../../assets/images/webp/work-02.webp',
+      src: '../../../../assets/images/webp/work-04.webp',
     }
     this.slides[2] = {
       src: '../../../../assets/images/webp/work-03.webp',
