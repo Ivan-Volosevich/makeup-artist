@@ -71,10 +71,10 @@
         <div class="mobile-menu">
             <input type="checkbox" id="toggle-nav" class="header-toggle">
             <label for="toggle-nav">
-                <svg class="closed-menu" width='24' height='18' viewbox='0 0 24 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <svg class="closed-menu" on-click="viseOverflow()" width='24' height='18' viewbox='0 0 24 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
                     <path d='M0 0H24V3H0V0ZM0 7.5H24V10.5H0V7.5ZM0 15H24V18H0V15Z' fill='#b1daea'></path>
                 </svg>
-                <svg class="opened-menu" fill="#000000" width="24" height="24" viewBox="0 0 24 24" id="cross" xmlns="http://www.w3.org/2000/svg">
+                <svg class="opened-menu" on-click="hideOverflow()" fill="#000000" width="24" height="24" viewBox="0 0 24 24" id="cross" xmlns="http://www.w3.org/2000/svg">
                     <line x1="22" y1="22" x2="5" y2="5" style="fill: none; stroke: rgb(177, 218, 234); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4;">
                     </line>
                     <line x1="22" y1="5" x2="5" y2="22" style="fill: none; stroke: rgb(177, 218, 234); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4;">

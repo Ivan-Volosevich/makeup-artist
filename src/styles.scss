@@ -153,6 +153,31 @@ a.footer-header-links {
   }
 }
 
+@media screen and (max-width: $max-tablet-width) {
+  section {
+    padding: 10px;
+  }
+
+  a.footer-header-links {
+    font-size: 24px;
+    font-weight: bold;
+  
+    &:hover, &:active {
+        color: $mainPink;
+        fill: $mainPink;
+  
+        svg, path, g {
+            fill: $mainPink;
+        }
+    }
+
+    svg {
+      max-width: 32px;
+      max-height: 32px;
+    }
+  }
+}
+
 @keyframes anim-link-button-bg-color {
   to {
     background-position: 200% center;

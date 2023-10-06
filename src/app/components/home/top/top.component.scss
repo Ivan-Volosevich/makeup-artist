@@ -8,6 +8,15 @@
     margin-top: 76px;
   }
 
+  @media screen and (max-width: $max-tablet-width) {
+    margin-top: 46px;
+
+    &_container {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
   &_container {
     display: flex;
     color: $mainText;
